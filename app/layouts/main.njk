@@ -1,0 +1,127 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% block title %}{% endblock %}
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- Reseaux sociaux  -->
+    <link rel="canonical" href="http://ecan.fr" />
+    <meta property="og:locale" content="fr" />
+    <meta property="og:title" content="Ecole de la Création et de l'Artisanat numérique" />
+    <meta property="og:description" content="Devenez acteurs de la nouvelle révolution industrielle" />
+    <meta property="og:image" content="img/ninja.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://ecan.fr/" />
+
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:description" content="Devenez acteurs de la nouvelle révolution industrielle"/>
+    <meta name="twitter:title" content="Ecole de la Création et de l'Artisanat numérique"/>
+    <meta name="twitter:site" content="@ECANfr"/>
+    <meta name="twitter:image" content="https://www.raspberrypi.org/wp-content/uploads/2015/11/ninja2.jpg"/>
+    <meta name="twitter:creator" content="@XavierLava"/>
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "University",
+        "name": "Ecole de la Création et de l'Artisanat Numérique",
+        "description": "Organisme de formation professionnelle aux métiers du numérique, l'ECAN forme les professionnels avec des cours techniques ( mécatronique, électronique, programmation ) des enseignements pratiques ( droit, évenementiel... ) et une formation incubation de projet technologique ( robotique, object connecté ... )",
+        "telephone": "+33667449979",
+      }
+    </script>
+    
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    {% block content %}{% endblock %}
+
+
+    <footer id="footer" class="cfld">
+        <div class="container">
+            <div class="row">
+      
+            </div>
+            <!--/row-->
+              <p class="text-right">Ecole de la Création et de l'Artisanat Numérique ©2015 - 2016</p>
+        </div>
+
+    </footer>
+
+    <div class="modal fade" id="contactForm" tabindex="-1" role="dialog" aria-labelledby="contact" aria-hidden="true" z-index="10">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fermer"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="sujetContactDisplay">Informations</h4>
+          </div>
+          <div class="modal-body" class="">
+          <p> Pour vous renseigner sur les prochaines sessions ou toute demande particulière :</p> 
+            <form action="//formspree.io/xavier@ecan.fr"
+                  method="POST">
+                <div class="form-group">
+                  <label for="_replyto" class=" control-label">Email </label>
+                  <input type="email" name="_replyto" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="message" class="control-label">Message</label>
+                  <textarea name="message" class="form-control" rows="3"></textarea>
+                </div>
+                <input type="hidden" name="_next" value="http://ecan.fr">    
+                <input type="hidden" name="_subject" id="sujetContactSend" value="Prise de contact en ligne">
+                <div>
+                  <input type="submit" value="Envoyer" class="btn btn-danger pull-right">
+                </div>
+            </form>
+          </div>
+
+        </div> <!-- modalcontent -->
+      </div>
+    </div>
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

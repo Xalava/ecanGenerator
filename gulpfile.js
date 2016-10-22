@@ -66,7 +66,7 @@ gulp.task('lint:test', () => {
 });
 
 gulp.task('html', ['views','styles', 'scripts'], () => {
-  return gulp.src('app/*.html', '.tmp/*.html')
+  return gulp.src(['app/*.html', '.tmp/*.html'])
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.cssnano({safe: true, autoprefixer: false})))
@@ -127,6 +127,8 @@ gulp.task('serve', ['views','styles', 'scripts', 'fonts'], () => {
 
   gulp.watch('app/**/*.html', ['views']);
   gulp.watch('app/**/*.njk', ['views']);
+  gulp.watch('app/*.njk', ['views']);
+
   gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/scripts/**/*.js', ['scripts']);
   gulp.watch('app/fonts/**/*', ['fonts']);

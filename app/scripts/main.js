@@ -51,3 +51,12 @@ $('a[class*="navlink"]').click(function () {
 
     });
   }(jQuery)); 
+
+//On modal show retrieve
+
+$('#contactForm').on('show.bs.modal', function(e) {
+  var formation = $(e.relatedTarget).data('id');
+  $('#sujetContactDisplay').html('Prise de contact - '+formation);  
+  $('#sujetContactSend').val('Prise de contact - '+formation);
+
+});
