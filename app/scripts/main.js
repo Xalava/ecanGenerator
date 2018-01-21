@@ -4,30 +4,30 @@ $('body').scrollspy({
 });
 
 
-// smooth scrolling
-$('a[class*="navlink"]').click(function () {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-        var a = $(this.hash);
-        if (a = a.length
-            ? a
-            : $('[name=' + this.hash.slice(1) + ']'), a.length) 
-            return $('body').animate({
-                scrollTop: a
-                    .offset()
-                    .top - 30
-            }, 800),
-            '#section1' == this.hash
-                ? $('.scroll-up').hide()
-                : $('.scroll-up').show(),
-            a.find('.animate').delay(1200).addClass('animated'),
-            setTimeout(function () {
-                a
-                    .find('.animated')
-                    .removeClass('animated')
-            }, 2e3),
-            !1
-    }
-});
+// // smooth scrolling
+// $('a[class*="navlink"]').click(function () {
+//     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+//         var a = $(this.hash);
+//         if (a = a.length
+//             ? a
+//             : $('[name=' + this.hash.slice(1) + ']'), a.length) 
+//             return $('body').animate({
+//                 scrollTop: a
+//                     .offset()
+//                     .top - 30
+//             }, 800),
+//             '#section1' == this.hash
+//                 ? $('.scroll-up').hide()
+//                 : $('.scroll-up').show(),
+//             a.find('.animate').delay(1200).addClass('animated'),
+//             setTimeout(function () {
+//                 a
+//                     .find('.animated')
+//                     .removeClass('animated')
+//             }, 2e3),
+//             !1
+//     }
+// });
 
 // displaybar
 (function ($) {
@@ -47,6 +47,14 @@ $('a[class*="navlink"]').click(function () {
                     $('.mainbar').fadeOut();
                 }
             });
+        });
+
+        //smooth srolling
+        $('.navlink').on('click', function() { // Au clic sur un élément
+            var page = $(this).attr('href'); // Page cible
+            var speed = 750; // Durée de l'animation (en ms)
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
         });
 
     });
