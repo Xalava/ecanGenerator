@@ -8,6 +8,12 @@ const wiredep = require('wiredep').stream;
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
+// TODO defin path variables to have a directory structure
+// var pages = [
+//     path.join(__dirname, 'c.txt'),
+//     path.join(__dirname, 'a/a.txt')
+// ];
+
 gulp.task('views', () => {
   return gulp.src('app/*.njk')
   .pipe($.nunjucksRender({

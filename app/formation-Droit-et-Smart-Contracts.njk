@@ -1,12 +1,12 @@
 {% extends "layouts/main.njk" %}
 
 {% block title %}
-    <title>Formation Blockchain & Smart Contracts</title>
-    <meta name="description" content="Formation professionnelle Blockchain & Smart contracts">
+    <title>Formation Droit & Smart Contracts</title>
+    <meta name="description" content="Formation professionnelle Droit & Smart contracts">
 {% endblock %}
 
 {% block content %}
-    <nav class="mainbar navbar navbar-trans navbar-fixed-top" role="navigation">
+    <nav class=" navbar navbar-trans navbar-fixed-top" role="navigation">
       <div class="container">
           <div class="navbar-header">
 
@@ -43,7 +43,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                  <p class="lead"> Saisir le fonctionnement des protocoles <strong>blockchain</strong>, des déclinaisons <strong>Ethereum</strong>, <strong>Bitcoin</strong> et <strong>Hyperledger</strong>, les questions juridiques et les perspectives de réglementations à venir.
+                  <p class="lead"> Saisir le fonctionnement des protocoles <strong>blockchain</strong>, des <strong>Smart Contracts</strong>, les questions juridiques et les perspectives de réglementations.
                 </div>
             </div>
             <br/>
@@ -155,27 +155,12 @@
              <div class="row">
 
                   <div class="col-sm-2 col-sm-push-2 text-center ">
-                      <figure class="core">
-                        <img src="img/formateur/xavier.jpg" alt="Xavier Lavayssière" class="img-circle" height="128" width="128"/>
-                      <figcaption>
-                        <ul class="icons list-unstyled">
-                          <li><a href="https://twitter.com/XavierLava" class="fa fa-twitter yay fa-lg "><i class="label">Twitter</i></a></li>
-                          <li><a href="https://www.linkedin.com/in/Lavayssiere" class="fa fa-linkedin yay fa-lg "><i class="label">Linkedin</i></a></li>
-                          <li><a href="https://github.com/Xalava" class="fa fa-github yay fa-lg "><i class="label">GitHub</i></a></li>
-                          <li><a href="mailto:xavier@ecan.fr" class="fa fa-envelope-o yay fa-lg "><i class="label">Email</i></a></li>
-                        </ul>
-                      </figcaption>
-                    </figure>
+                  {% include "includes/image-xavier.html" %}
+
                </div>
                
                <div class="col-sm-6 col-sm-push-2 ">
-                      <h3 class="">Xavier <span> Lavayssière</span></h3>
-                        <ul class="bio list-unstyled ">
-                          <p>Diplômé de l’université Panthéon-Assas en droit public de l'économie après des études en Mathématiques et Informatique, Xavier Lavayssière travaille sur les questions blockchain et régulation au sein de l’équipe Blockchain Perspectives Joint Research Initiative (Institut Louis Bachelier, CNAM et  CERSA).</p>
-
-                          <p>Xavier est le cofondateur de l'ECAN, co-auteur du rapport de France Stratégie sur les aspects juridique des protocoles blockchain et responsable du programme Smart Contract Academy. Par ailleurs, il préside Les Bricodeurs, association de développeurs et entrepreneurs du numérique.
-</p>
-                        </ul>
+                  {% include "includes/bio-xavier.html" %}
                 </div>
 
 
@@ -237,57 +222,6 @@
         </div> <!-- row -->
     </section>
 
-    <section class="cfld" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="text-center">Contact</h2>
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <figure class="thumbnail">
-
-                    <img src="img/both2.jpg" alt="Atelier" class="img-responsive"/>
-                    </figure>
-                </div>
-                <div class="col-md-4">
-                    <figure class="thumbnail">
-
-                    <img src="img/SmartContracts.jpg" alt="Formation Smart Contracts" class="img-responsive"/>
-                    </figure>
-
-                </div>
-                <div class="col-md-4">
-                    <address>
-                      <p><strong>Xavier Lavayssière</strong></p>
-
-                      <p>8 Place Louis Chazette<br>
-                      69001 LYON<br>
-                      P: 06 67 44 99 79</p>
-                    </address>
-                    <address>
-                     <strong>Email</strong><br>
-                    <a href="mailto:contact@ecan.fr"  class="yay">contact@ecan.fr</a>
-                    </address>
-
-
-                  <a href="https://www.facebook.com/ecanfr/" class="yay"><i class="fa fa-facebook fa-2x sociaux "></i></a>
-                  <i> </i>
-
-                  <a href="https://www.twitter.com/ECANfr/"  class="yay"><i class="fa fa-twitter fa-2x sociaux "></i></a>
-
-                  <span type="button" data-toggle="modal" data-target="#contactForm" class="yay" data-id="Blockchain"><i class="fa fa-envelope fa-2x sociaux "></i></span>
-
-                </div>
-
-            </div>
-        </div>
-
-
-
-    </section>
 
 
 

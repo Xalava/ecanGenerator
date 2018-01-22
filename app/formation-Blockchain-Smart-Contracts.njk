@@ -17,6 +17,8 @@
           <div class="navbar-collapse collapse" id="navbar-collapsible">
               <ul class="nav navbar-nav navbar-left">
                   <li><a href="#presentation" class="navlink">Présentation</a></li>
+                  <li><a href="#contenu" class="navlink">Programme</a></li>
+                  <li><a href="#equipe" class="navlink">Formateurs</a></li>
                   <li><a href="#contact" class="navlink">Contact</a></li>
                   <li>&nbsp;</li>
               </ul>
@@ -130,30 +132,12 @@
         <div class="container">
             <h1 class="text-center">Equipe</h1>
              <div class="row">
-
-                  <div class="col-sm-2 col-sm-push-6 text-center ">
-                      <figure class="core">
-                        <img src="img/formateur/xavier.jpg" alt="Xavier Lavayssière" class="img-circle" height="128" width="128"/>
-                      <figcaption>
-                        <ul class="icons list-unstyled">
-                          <li><a href="https://twitter.com/XavierLava" class="fa fa-twitter yay fa-lg "><i class="label">Twitter</i></a></li>
-                          <li><a href="https://www.linkedin.com/in/Lavayssiere" class="fa fa-linkedin yay fa-lg "><i class="label">Linkedin</i></a></li>
-                          <li><a href="https://github.com/Xalava" class="fa fa-github yay fa-lg "><i class="label">GitHub</i></a></li>
-                          <li><a href="mailto:xavier@ecan.fr" class="fa fa-envelope-o yay fa-lg "><i class="label">Email</i></a></li>
-                        </ul>
-                      </figcaption>
-                    </figure>
-               </div>
+                <div class="col-sm-2 col-sm-push-6 text-center ">
+                  {% include "includes/image-xavier.html" %}
+                </div>
                
-               <div class="col-sm-3 col-sm-push-6 ">
-                      <h3 class="">Xavier <span> Lavayssière</span></h3>
-                        <ul class="bio list-unstyled ">
-                          <li>Chercheur associé au <i>CERSA</i> - L'utilisation de la blockchain comme instrumen de régulation</li>
-                          <li>Coauteur du rapport aspects juridiques de la blockchain <i>France Stratégie</i></li>
-                          <li>Co fondateur de la <i>Smart Contract Academy</i> - think tank blockchain et droit</li>
-                          <li>Master droit public de l'économie - <i>Université Panthéon-Assas</i></li>
-                          <li>Licence de mathématiques & informatique - <i>Université de Provence</i></li>
-                        </ul>
+                <div class="col-sm-3 col-sm-push-6 ">
+                  {% include "includes/bio-xavier.html" %}
                 </div>
 
                 <div class="col-sm-2 col-sm-pull-4 text-center  ">
@@ -243,57 +227,6 @@
         </div> <!-- row -->
     </section>
 
-    <section class="cfld" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="text-center">Contact</h2>
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <figure class="thumbnail">
-
-                    <img src="img/both2.jpg" alt="Atelier" class="img-responsive"/>
-                    </figure>
-                </div>
-                <div class="col-md-4">
-                    <figure class="thumbnail">
-
-                    <img src="img/SmartContracts.jpg" alt="Formation Smart Contracts" class="img-responsive"/>
-                    </figure>
-
-                </div>
-                <div class="col-md-4">
-                    <address>
-                      <p><strong>Xavier Lavayssière</strong></p>
-
-                      <p>8 Place Louis Chazette<br>
-                      69001 LYON<br>
-                      P: 06 67 44 99 79</p>
-                    </address>
-                    <address>
-                     <strong>Email</strong><br>
-                    <a href="mailto:contact@ecan.fr"  class="yay">contact@ecan.fr</a>
-                    </address>
-
-
-                  <a href="https://www.facebook.com/ecoleCAN/" class="yay"><i class="fa fa-facebook fa-2x sociaux "></i></a>
-                  <i> </i>
-
-                  <a href="https://www.twitter.com/ECANfr/"  class="yay"><i class="fa fa-twitter fa-2x sociaux "></i></a>
-
-                  <span type="button" data-toggle="modal" data-target="#contactForm" class="yay" data-id="Blockchain"><i class="fa fa-envelope fa-2x sociaux "></i></span>
-
-                </div>
-
-            </div>
-        </div>
-
-
-
-    </section>
 
 
 
