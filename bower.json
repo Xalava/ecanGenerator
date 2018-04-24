@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass": "~3.3.7",
-    "components-font-awesome": "^4.7.0"
+    "components-font-awesome": "^5.0.6"
   },
   "overrides": {
     "bootstrap-sass": {
@@ -17,5 +17,8 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.5.3"
+  },
+  "resolutions": {
+    "components-font-awesome": "^5.0.6"
   }
 }
